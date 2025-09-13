@@ -38,7 +38,6 @@ V = S(:,1:N); % Fluid volume in all PT segments (relative to unit volume)
 C = S(:,N+1:N+M); % Sodium concentration in TAL (relative to plasma [Na+])
 G = k*S(:,N+M+1); % SNGFR (relative to unit volume)
 GFR = 0.3*k*S(:,N+M+1); % SNGFR (nl/min)
-
 time = T/10; % Unit: 1 second
 
 %% plots
