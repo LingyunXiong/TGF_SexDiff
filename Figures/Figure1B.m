@@ -19,7 +19,7 @@ figure(1)
 plot(time,dt_dex,'k','LineWidth',2)
 xlabel("Time (second)",FontSize=20)
 ylabel("Fluorescence Intensity (a.u.)",FontSize=20)
-axis([0 500 2.5 9])
+axis([0 400 2.5 9])
 
 %% Fitting Sinewaves 
 X = time;
@@ -36,7 +36,7 @@ plot(time,dt_dex,'-k','LineWidth',2); hold on
 plot(time(210:end),myFit.Fitted(210:end),'-r','LineWidth',2)
 xlabel('Time (second)','fontsize',20)
 ylabel("Fluorescence Intensity (a.u.)",FontSize=20)
-axis([0 420 2.5 9])
+axis([0 400 2.5 9])
 xticks(0:100:400)
 lgd = legend('Raw','Ref: 0.032 Hz');
 lgd.FontSize = 20;
