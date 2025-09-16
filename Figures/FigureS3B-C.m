@@ -1,5 +1,5 @@
 %% Simulation the effect of TGF on SNGFR in the kidney 
-function FigureS3A
+function FigureS3B
 global k lambda sigma alpha beta cop n v_unit N M 
  
 set(0,                          ...
