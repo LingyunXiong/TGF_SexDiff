@@ -1,5 +1,5 @@
 %% Simulation the effect of TGF on SNGFR in the kidney 
-function Figure3F
+function Figure3G
 global k lambda sigma alpha beta cop n v_unit N M 
  
 set(0,                          ...
@@ -46,12 +46,11 @@ k2 = 0.55;
 GFR = 0.3*[transpose(k1*S(1:1060,end)),transpose(k2*S(1061:end,end))];
 
 %% plots
-figure(1)
-plot(time,GFR(:),'.k',LineWidth=5); hold on
-ylabel('GFR (nl/min)','fontsize',20)
+figure(2)
+plot(time,0.005*V(:,10),'.k',LineWidth=5)
+ylabel('Tubular Fluid Volume (nl)','fontsize',20)
 xlabel('Time (second)','fontsize',20)
-axis([0 250 0 10])
-hold off
+axis([0 250 0 0.2])
 
 end
  
@@ -84,4 +83,3 @@ function s_prime = deRHS(t,s)
     
     s_prime = [Fv; Fc; Fg];
 end
-
